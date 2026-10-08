@@ -1,0 +1,341 @@
+* {
+    border-collapse: collapse;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/Free_Tech_Background.png");
+    background-size: cover;
+    color: white;
+}
+
+a {
+    color: #001540;
+}
+
+/* HEADER */
+header{
+    background-color: #527ED9;
+    position: relative;
+    display: flex;
+    margin-bottom: 15xp;
+    z-index: 2;
+    box-shadow: 0 0 50px #001540;
+}
+header img {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    margin: 5px;
+    border: 2px solid #001540;
+}
+header > div {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header div h1 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+header img:hover {
+    box-shadow: 0 0 10px black;
+}
+
+header fieldset {
+    margin: 5px;
+    border: 2px solid #001540;
+    padding: 5px;
+    border-radius: 5px;
+}
+header legend {
+    margin-left: 15px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+}
+nav a:hover {
+    color: #527ED9;
+}
+nav ul {
+    list-style-position: inside;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+nav li {
+    background-color: #001540;
+    border-radius: 5px;
+    padding: 5px;
+}
+nav li:hover {
+    box-shadow: 0 0 5px #001540;
+}
+/* HEADER */
+
+/* GENERAL */
+main {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    background-color: #527ED9;
+    box-shadow: 0 0 25px black;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 50px;
+}
+h1, h2, h3, h4 {
+    color: #001540;
+    text-transform: uppercase;
+}
+h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h5 {
+    color: #001540;
+    font-size: 16px;
+}
+p {
+    margin-bottom: 5px;
+}
+/* GENERAL */
+
+/* OVER MIJ */
+#overmij h3 {
+    margin-top: 0px;
+}
+/* OVER MIJ */
+
+/* VAARDIGHEDEN + KENNISSEN */
+#veerdighedenEnKennis {
+    display: flex;
+}
+/* VAARDIGHEDEN */
+#vaardigheden {
+    width: 50%;
+}
+#vaardigheden ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: none;
+}
+#vaardigheden li {
+    background-color: #001540;
+    padding: 5px;
+    border-radius: 5px;
+}
+#vaardigheden li:hover {
+    box-shadow: 0 0 10px #001540;
+}
+/* VAARDIGHEDEN */
+
+/* KENNISSEN */
+#kennis {
+    width: 50%;
+    text-align: right;
+}
+#kennis ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 5px;
+    list-style: none;
+}
+#kennis li {
+    background-color: #001540;
+    padding: 5px;
+    border-radius: 5px;
+}
+#kennis li:hover {
+    box-shadow: 0 0 10px #001540;
+}
+/* KENNISSEN */
+/* VAARDIGHEDEN + KENNISSEN */
+
+/* TALENKENNIS */
+#talenkennis fieldset {
+    display: none;
+}
+#talenkennis ul {
+    display: flex;
+    list-style-position: inside;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+#talenkennis ul li {
+    margin-bottom: 5px;
+    background-color: #001540;
+    padding: 5px;
+    border-radius: 5px;
+}
+#talenkennis ul li {
+    margin-bottom: 10px;
+}
+#talenkennis ul li:hover {
+    box-shadow: 0 0 5px #001540;
+}
+#talenkennis fieldset {
+    border: 3px solid #001540;
+    padding: 5px;
+    border-radius: 5px;
+}
+#talenkennis legend {
+    margin-left: 15px;
+    color: #001540;
+    font-weight: bold;
+}
+table{
+    border: 2px solid black;
+}
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+}
+table tr:nth-child(even) {
+    background-color: #2EA5E3;
+}
+table tr:nth-child(odd) {
+    background-color: #527ED9;
+}
+table tr:nth-child(1) {
+    background-color: #001540;
+}
+table tr:hover {
+    background-color: #001540;
+}
+/* TALENKENNIS */
+
+/* WERKERVARINGEN */
+#werkervaring h5 {
+    margin-bottom: 5px;
+}
+#werkervaring ul {
+    margin-bottom: 20px;
+}
+#werkervaring fieldset {
+    border: 5px solid #001540;
+    padding: 5px;
+    border-radius: 5px;
+}
+#werkervaring legend {
+    margin-left: 15px;
+    color: #001540;
+    font-weight: bold;
+    padding: 0 5px;
+}
+.lijstWerkervaringen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    list-style-type: none;
+}
+.lijstWerkervaringen > div {
+    /* border: 2px solid #001540; */ /* Is optioneel */
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 500px;
+}
+.lijstWerkervaringen > div:hover {
+    box-shadow: 0 0 10px #001540;
+}
+.periode {
+    text-align: right;
+    position: relative;
+    right: 0px;
+}
+.taken {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 5px;
+}
+.taken li {
+    border-radius: 5px;
+    background-color: #001540;
+    padding: 5px;
+}
+.taken li:hover {
+    box-shadow: 0 0 10px #001540;
+}
+/* WERKERVARINGEN */
+
+/* HOBBY */
+#hobby ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 5px;
+}
+#hobby li {
+    background-color: #001540;
+    padding: 5px;
+    border-radius: 5px;
+}
+#hobby li:hover {
+    box-shadow: 0 0 10px #001540;
+}
+/* HOBBY */
+
+/* FOOTER */
+footer {
+    padding: 5px 15px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    max-width: 750px;
+    border-radius: 10px;
+    position: sticky;
+    bottom: 5px;
+    background-color: #527ED9;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    box-shadow: 0 0 3px black;
+}
+footer a:hover {
+    /* color: #2EA5E3; */
+    color: white;
+}
+/* FOOTER */
+
+@media screen and (max-width: 576px) {
+    header {
+        flex-direction: column;
+    }
+    header > div {
+        margin-left: 5px;
+    }
+    header fieldset {
+        width: 80%;
+    }
+
+
+    #talenkennis table {
+        display: none;
+    }
+    #talenkennis fieldset {
+        display: block  ;
+    }
+}
